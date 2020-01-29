@@ -1,4 +1,31 @@
 .linkbar {
-  background: var(--color-gray-normal);
-  height: 15vh;
+	display: none;
+}
+
+@media (min-width: 992px) {
+	.linkbar {
+		display: block;
+		background: var(--color-gray-normal);
+		padding: 0 7vw;
+		font-size: 1.4rem;
+		color: var(--color-gray-dark-1);
+
+		&-list {
+			padding: 3vh 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&-item {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+
 }

@@ -16,11 +16,11 @@
   box-sizing: inherit; }
 
 body {
-  font-family: sans-serif;
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: Helvetica, sans-serif; }
 
 a {
   text-decoration: none; }
@@ -29,10 +29,10 @@ li {
   list-style: none; }
 
 .header {
-  box-shadow: 0 3px 3px var(--color-gray-light-2);
   display: flex;
-  font-size: 1.3rem;
-  color: var(--color-gray-dark-1); }
+  font-size: 1.4rem;
+  color: var(--color-gray-dark-1);
+  border-bottom: 3px solid var(--color-gray-light-2); }
 
 .header-s {
   width: 100vw;
@@ -152,5 +152,23 @@ li {
       margin-left: 0; } }
 
 .linkbar {
-  background: var(--color-gray-normal);
-  height: 15vh; }
+  display: none; }
+
+@media (min-width: 992px) {
+  .linkbar {
+    display: block;
+    background: var(--color-gray-normal);
+    padding: 0 7vw;
+    font-size: 1.4rem;
+    color: var(--color-gray-dark-1); }
+    .linkbar-list {
+      padding: 3vh 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .linkbar-item {
+      cursor: pointer;
+      display: flex;
+      align-items: center; }
+      .linkbar-item i {
+        margin-right: 5px; } }

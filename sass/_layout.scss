@@ -1,8 +1,8 @@
 .header {
-    box-shadow: 0 3px 3px var(--color-gray-light-2);
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--color-gray-dark-1);
+    border-bottom: 3px solid var(--color-gray-light-2);
 
 }
 
@@ -42,7 +42,6 @@
 .header-m {
     width: 100vw;
     display: none;
-
 }
 
 
@@ -66,13 +65,11 @@
 
         &__left {
             margin-right: 3rem;
-
             display: flex;
             align-items: center;
 
             &-logo {
                 width: 14rem;
-
             }
 
             &-categories {
@@ -127,7 +124,6 @@
 
         &__right {
             flex: 0 0 15%;
-
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -141,7 +137,6 @@
 
             &__icons {
                 flex: 0 0 35%;
-
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -215,7 +210,6 @@
 
         &__right {
             flex: 0 0 45%;
-
 
             &__menu {
                 li:not(:last-of-type) {
