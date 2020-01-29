@@ -1,0 +1,156 @@
+:root {
+  --color-white: #fff;
+  --color-gray-normal: rgb(247, 247, 247);
+  --color-gray-light-1: rgb(253, 251, 243);
+  --color-gray-light-2: rgb(218, 215, 206);
+  --color-gray-dark-1: rgb(141, 139, 132);
+  --color-gray-dark-2: rgb(83, 82, 78);
+  --color-gray-black: rgb(17, 16, 14);
+  --color-red: rgb(250, 99, 82); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  font-family: sans-serif;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.header {
+  box-shadow: 0 3px 3px var(--color-gray-light-2);
+  display: flex;
+  font-size: 1.3rem;
+  color: var(--color-gray-dark-1); }
+
+.header-s {
+  width: 100vw;
+  padding: 0 5vw;
+  font-size: 2.3rem;
+  color: var(--color-gray-dark-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header-s__left i {
+    cursor: pointer; }
+  .header-s__left i:first-child {
+    margin-right: 10px; }
+  .header-s__middle img {
+    width: 14rem; }
+  .header-s__right i {
+    cursor: pointer; }
+
+.header-m {
+  width: 100vw;
+  display: none; }
+
+@media (min-width: 768px) {
+  .header-s {
+    display: none; }
+  .header-m {
+    display: flex;
+    align-items: center; }
+    .header-m__left {
+      margin-right: 3rem;
+      display: flex;
+      align-items: center; }
+      .header-m__left-logo {
+        width: 14rem; }
+      .header-m__left-categories {
+        display: flex;
+        align-items: center;
+        cursor: pointer; }
+        .header-m__left-categories i {
+          margin-right: 5px;
+          font-size: 2rem; }
+        .header-m__left-categories h6 {
+          font-size: 1.3rem; }
+    .header-m__middle {
+      margin-right: 3rem; }
+      .header-m__middle-form {
+        position: relative; }
+      .header-m__middle-input {
+        width: 45vw;
+        height: 4rem;
+        border: none;
+        background: var(--color-gray-light-1);
+        font-size: 2rem; }
+        .header-m__middle-input::placeholder {
+          color: var(--color-gray-dark-1);
+          font-size: 1.5rem; }
+        .header-m__middle-input:focus {
+          outline: none; }
+      .header-m__middle-search {
+        position: absolute;
+        top: 1.2rem;
+        font-size: 1.5rem;
+        right: 1rem;
+        cursor: pointer;
+        color: var(--color-red); }
+    .header-m__right {
+      flex: 0 0 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .header-m__right__menu {
+        display: none; }
+        .header-m__right__menu li {
+          cursor: pointer; }
+      .header-m__right__icons {
+        flex: 0 0 35%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .header-m__right__icons li {
+          cursor: pointer; }
+        .header-m__right__icons i {
+          font-size: 2rem; }
+        .header-m__right__icons li:nth-child(2n-1) {
+          display: none; }
+        .header-m__right__icons-me {
+          padding: 1.5rem;
+          color: var(--color-white);
+          background: var(--color-gray-dark-1);
+          border-radius: 50%;
+          margin-left: 2rem; } }
+
+@media (min-width: 992px) {
+  .header-m__middle-input {
+    width: 40vw; }
+  .header-m__right {
+    flex: 0 0 30%; }
+    .header-m__right__menu {
+      margin-right: 3rem;
+      display: flex; }
+      .header-m__right__menu li:nth-of-type(3) {
+        margin-left: 2rem; }
+      .header-m__right__menu li:not(:last-of-type) {
+        display: none; } }
+
+@media (min-width: 1200px) {
+  .header-m__middle-input {
+    width: 30vw; }
+  .header-m__right {
+    flex: 0 0 45%; }
+    .header-m__right__menu li:not(:last-of-type) {
+      display: block;
+      margin-right: 1rem; }
+    .header-m__right__icons li:nth-child(2n-1) {
+      display: block; }
+    .header-m__right__icons-me {
+      margin-left: 0; } }
+
+.linkbar {
+  background: var(--color-gray-normal);
+  height: 15vh; }

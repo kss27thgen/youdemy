@@ -1,0 +1,46 @@
+:root {
+    // colors
+    --color-white: #fff;
+
+    --color-gray-normal: rgb(247, 247, 247);
+    --color-gray-light-1: rgb(253, 251, 243);
+    --color-gray-light-2: rgb(218, 215, 206);
+    --color-gray-dark-1: rgb(141, 139, 132);
+    --color-gray-dark-2: rgb(83, 82, 78);
+
+    --color-gray-black: rgb(17, 16, 14);
+
+
+    --color-red: rgb(250, 99, 82);
+}
+
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
