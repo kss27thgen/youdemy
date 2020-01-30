@@ -92,8 +92,10 @@
 
             &-input {
                 width: 45vw;
+                padding: .5rem 2rem;
                 height: 4rem;
                 border: none;
+                color: var(--color-gray-dark-1);
                 background: var(--color-gray-light-2);
                 font-size: 2rem;
 
@@ -223,6 +225,15 @@
             }
         }
     }
+}
+
+
+
+/////// main /////////
+.main {
+    // RM
+    min-height: 100vh;
+    padding: 0 5vw;
 }
 
 
