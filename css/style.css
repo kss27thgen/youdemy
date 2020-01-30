@@ -250,12 +250,10 @@ main {
 .facade {
   color: var(--color-white); }
   .facade-wrapper {
-    height: 60vh;
     background: url(../images/facade.jpg);
     background-size: cover;
     background-position: center;
-    width: 100%;
-    padding: 15vh 0 0 3vw; }
+    padding: 15vh 0 10vh 3vw; }
   .facade__heading {
     font-size: 3.5rem;
     font-weight: 200; }
@@ -266,6 +264,9 @@ main {
     font-size: 1.8rem; }
 
 @media (min-width: 992px) {
+  .facade-wrapper {
+    background-position: top;
+    padding-bottom: 15vh; }
   .facade__heading {
     font-size: 4rem;
     font-weight: 400; } }

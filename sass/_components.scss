@@ -52,13 +52,10 @@
     color: var(--color-white);
 
     &-wrapper {
-        height: 60vh;
         background: url(../images/facade.jpg);
-        // filter: contrast(90%);
         background-size: cover;
         background-position: center;
-        width: 100%;
-        padding: 15vh 0 0 3vw;
+        padding: 15vh 0 10vh 3vw;
     }
 
     &__heading {
@@ -84,6 +81,10 @@
 
 @media (min-width: 992px) {
     .facade {
+        &-wrapper {
+            background-position: top;
+            padding-bottom: 15vh;
+        }
         &__heading {
             font-size: 4rem;
             font-weight: 400;
@@ -91,5 +92,6 @@
 
 
     }
+}
 
-    @media (min-width: 1200px) {}
+@media (min-width: 1200px) {}
