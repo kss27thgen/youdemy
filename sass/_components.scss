@@ -1,31 +1,95 @@
+//////// Link bar /////////
+
 .linkbar {
-	display: none;
+    display: none;
 }
 
 @media (min-width: 992px) {
-	.linkbar {
-		display: block;
-		background: var(--color-gray-light-2);
-		padding: 0 7vw;
-		font-size: 1.4rem;
-		color: var(--color-gray-dark-1);
+    .linkbar {
+        display: block;
+        background: var(--color-gray-light-2);
+        padding: 0 7vw;
+        font-size: 1.4rem;
+        color: var(--color-gray-dark-1);
 
-		&-list {
-			padding: 3vh 0;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
+        &-list {
+            padding: 3vh 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-		&-item {
-			cursor: pointer;
-			display: flex;
-			align-items: center;
+        &-item {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
 
-			i {
-				margin-right: 5px;
-			}
-		}
-	}
+            &:last-of-type {
+                display: none;
+            }
 
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
 }
+
+@media (min-width: 1200px) {
+    .linkbar {
+        &-item {
+            &:last-of-type {
+                display: flex;
+            }
+        }
+    }
+}
+
+
+////////// Facade //////////
+
+.facade {
+    color: var(--color-white);
+
+    &-wrapper {
+        height: 60vh;
+        background: url(../images/facade.jpg);
+        // filter: contrast(90%);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        padding: 15vh 0 0 3vw;
+    }
+
+    &__heading {
+        font-size: 3.5rem;
+        font-weight: 200;
+    }
+
+    &__description {
+        width: 50%;
+        margin-top: 1.8rem;
+        font-weight: 200;
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .facade {
+        &__heading {
+            font-size: 4rem;
+            font-weight: 400;
+        }
+
+
+    }
+
+    @media (min-width: 1200px) {}
