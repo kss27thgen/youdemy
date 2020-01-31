@@ -8,7 +8,7 @@
         display: block;
         background: var(--color-gray-light-2);
         font-size: 1.6rem;
-        color: var(--color-gray-dark-2);
+        color: var(--color-gray-dark-1);
 
         &-list {
             display: flex;
@@ -104,7 +104,6 @@
 
 ////////// GALLERY //////////
 .gallery {
-    // TMP
     margin: 5vh 0;
 
     &__title {
@@ -121,17 +120,19 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        // flex-wrap: wrap;
         overflow: scroll;
     }
 
     &__card {
-        // TMP
         border: 1px solid var(--color-gray-light-3);
         margin-bottom: 3px;
         box-shadow: 0 3px 1px var(--color-gray-light-3);
         width: 16rem;
         margin-top: 2vh;
+
+        &:hover {
+            box-shadow: 1px 2px 7px var(--color-gray-light-3);
+        }
 
         &:hover &__upper {
             opacity: .5;
@@ -141,16 +142,13 @@
             margin-right: 2rem;
         }
 
-        &-link {
-            color: var(--color-gray-dark-2);
-
-        }
+        &-link {}
 
         &__upper {
             width: 16rem;
 
             img {
-                width: 100%;
+                width: 99%;
             }
         }
 
@@ -158,7 +156,6 @@
             padding: 2rem 1rem;
             display: flex;
             flex-direction: column;
-
 
             &__title {
                 font-size: 1.2rem;
@@ -182,9 +179,6 @@
         }
     }
 }
-
-
-
 
 
 @media (min-width: 576px) {
@@ -232,6 +226,7 @@
 ////////// Topics //////////
 .topics {
     color: var(--color-gray-dark-2);
+    padding: 1rem;
 
     &__title {
         font-size: 2rem;
@@ -244,12 +239,18 @@
 
     &__item {
         border: 1px solid var(--color-gray-light-3);
-        box-shadow: 0 2px 2px var(--color-gray-light-3);
+        box-shadow: 0 1px 1px var(--color-gray-light-3);
         padding: 2rem;
         margin-top: 1rem;
         margin-right: 1rem;
         font-size: 1.6rem;
+
+        &:hover {
+            box-shadow: 1px 2px 7px var(--color-gray-light-3);
+        }
     }
+
+
 }
 
 
@@ -262,6 +263,126 @@
         }
     }
 }
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+
+
+/////////// welcomeBack //////////
+.welcomeBack {
+    padding: 3rem 0 1rem;
+
+    font-size: 1.6rem;
+    color: var(--color-gray-dark-2);
+
+
+    &__title {
+        font-size: 2.3rem;
+        font-weight: 400;
+        color: var(--color-black);
+    }
+
+    &__description {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__left {}
+
+        &__right {
+            color: var(--color-blue);
+            font-size: 1.8rem;
+        }
+    }
+
+    &__wrapper {
+
+        overflow-x: scroll;
+        margin-top: .7rem;
+        display: flex;
+    }
+
+    &__link {}
+
+    &__card {
+        border: 1px solid var(--color-gray-light-3);
+        margin-right: 2rem;
+
+        &:hover {
+            box-shadow: 1px 2px 7px var(--color-gray-light-3);
+        }
+
+        &__main {
+            display: flex;
+
+            &__left {
+                flex: 0 0 35%;
+                overflow: hidden;
+                position: relative;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &-image {}
+
+                i {
+                    position: absolute;
+                    font-size: 6rem;
+                    opacity: .7;
+                }
+
+            }
+
+            &__right {
+                flex: 0 0 65%;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &-title {
+                    font-weight: 500;
+                }
+
+                &-timeLeft {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &__under {
+            background: var(--color-gray-light-3);
+
+            &-bar {
+                background: rgb(121, 167, 226);
+                height: .7rem;
+
+                &--1 {
+                    width: 40%;
+
+                }
+
+                &--2 {
+                    width: 87%;
+
+                }
+
+                &--3 {
+                    width: 20%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
 
 @media (min-width: 992px) {}
 
