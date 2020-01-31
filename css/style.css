@@ -6,6 +6,7 @@
   --color-gray-dark-1: rgb(150, 150, 150);
   --color-gray-dark-2: rgb(97, 97, 97);
   --color-black: rgb(17, 16, 14);
+  --color-blue: rgb(0, 133, 185);
   --color-red: rgb(250, 99, 82); }
 
 *,
@@ -24,13 +25,11 @@ html {
   font-family: Helvetica, sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: var(--color-gray-dark-2); }
 
 li {
   list-style: none; }
-
-main {
-  height: 100vh; }
 
 @media (min-width: 576px) {
   html {
@@ -199,7 +198,7 @@ main {
     .footer__menu-item:not(:last-of-type) {
       margin-right: 15px; }
     .footer__menu-item a {
-      color: #4d4d8d; }
+      color: var(--color-blue); }
   .footer__language {
     display: none; }
 
@@ -234,7 +233,7 @@ main {
     display: block;
     background: var(--color-gray-light-2);
     font-size: 1.6rem;
-    color: var(--color-gray-dark-2); }
+    color: var(--color-gray-dark-1); }
     .linkbar-list {
       display: flex;
       justify-content: center;
@@ -296,20 +295,20 @@ main {
     overflow: scroll; }
   .gallery__card {
     border: 1px solid var(--color-gray-light-3);
-    margin-bottom: 2px;
-    box-shadow: 0 2px 1px var(--color-gray-dark-1);
+    margin-bottom: 3px;
+    box-shadow: 0 3px 1px var(--color-gray-light-3);
     width: 16rem;
     margin-top: 2vh; }
+    .gallery__card:hover {
+      box-shadow: 1px 2px 7px var(--color-gray-light-3); }
     .gallery__card:hover .gallery__card__upper {
       opacity: .5; }
     .gallery__card:not(:last-of-type) {
       margin-right: 2rem; }
-    .gallery__card-link {
-      color: var(--color-gray-dark-2); }
     .gallery__card__upper {
       width: 16rem; }
       .gallery__card__upper img {
-        width: 100%; }
+        width: 99%; }
     .gallery__card__bottom {
       padding: 2rem 1rem;
       display: flex;
@@ -343,3 +342,85 @@ main {
         margin-top: 1rem; }
       .gallery__card__bottom__price {
         margin-top: 1rem; } }
+
+.topics {
+  color: var(--color-gray-dark-2);
+  padding: 1rem; }
+  .topics__title {
+    font-size: 2rem; }
+  .topics__wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+  .topics__item {
+    border: 1px solid var(--color-gray-light-3);
+    box-shadow: 0 1px 1px var(--color-gray-light-3);
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 1.6rem; }
+    .topics__item:hover {
+      box-shadow: 1px 2px 7px var(--color-gray-light-3); }
+
+@media (min-width: 768px) {
+  .topics__item {
+    width: 20rem; } }
+
+.welcomeBack {
+  padding: 3rem 0 1rem;
+  font-size: 1.6rem;
+  color: var(--color-gray-dark-2); }
+  .welcomeBack__title {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: var(--color-black); }
+  .welcomeBack__description {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .welcomeBack__description__right {
+      color: var(--color-blue);
+      font-size: 1.8rem; }
+  .welcomeBack__wrapper {
+    overflow-x: scroll;
+    margin-top: .7rem;
+    display: flex; }
+  .welcomeBack__card {
+    border: 1px solid var(--color-gray-light-3);
+    margin-right: 2rem; }
+    .welcomeBack__card:hover {
+      box-shadow: 1px 2px 7px var(--color-gray-light-3); }
+    .welcomeBack__card__main {
+      display: flex; }
+      .welcomeBack__card__main__left {
+        flex: 0 0 35%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .welcomeBack__card__main__left i {
+          position: absolute;
+          font-size: 6rem;
+          opacity: .7; }
+      .welcomeBack__card__main__right {
+        flex: 0 0 65%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .welcomeBack__card__main__right-title {
+          font-weight: 500; }
+        .welcomeBack__card__main__right-timeLeft {
+          font-size: 1.5rem; }
+    .welcomeBack__card__under {
+      background: var(--color-gray-light-3); }
+      .welcomeBack__card__under-bar {
+        background: #79a7e2;
+        height: .7rem; }
+        .welcomeBack__card__under-bar--1 {
+          width: 40%; }
+        .welcomeBack__card__under-bar--2 {
+          width: 87%; }
+        .welcomeBack__card__under-bar--3 {
+          width: 20%; }
