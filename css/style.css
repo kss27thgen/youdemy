@@ -81,7 +81,8 @@ li {
     display: none; }
   .header-m {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between; }
     .header-m__left {
       margin-right: 3rem;
       display: flex;
@@ -127,7 +128,7 @@ li {
           background: var(--color-red);
           color: var(--color-white); }
     .header-m__right {
-      flex: 0 0 15%;
+      margin-right: 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between; }
@@ -259,12 +260,12 @@ li {
       .linkbar-item h5 {
         font-weight: 300; }
     .linkbar__dropdown {
-      background: black;
-      color: white;
+      background: #1a1e24;
+      color: var(--color-white);
       width: 100%;
       position: absolute;
-      justify-content: center;
-      display: flex; }
+      display: flex;
+      justify-content: center; }
       .linkbar__dropdown-item {
         display: flex;
         flex-direction: column;

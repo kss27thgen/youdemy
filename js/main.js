@@ -125,7 +125,7 @@ $(function() {
 
 	
 	/////////// Linkbar-dropdown //////////
-	$('.linkbar-item, .linkbar__dropdown').hover(
+	$('.linkbar').hover(
 		function () {
 			$('.linkbar__dropdown').removeClass('inactive')
 		}, function () {
@@ -134,7 +134,358 @@ $(function() {
 	);
 
 
-	
+	$('#linkbarDevelopment').mouseenter(
+		function() {
+			$html = `
+			<ul class="linkbar__dropdown">
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-code"></i>
+						<p>Web Development</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-mobile-alt"></i>
+						<p>Mobile Apps</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-file-word"></i>
+						<p>Programming Languages</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-gamepad"></i>
+						<p>Game Development</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-database"></i>
+						<p>Databases</p>
+					</a>
+				</li>
+			</ul>
+			`
+			$('.linkbar__dropdown-list').html($html)
+		});
+
+
+	$('#linkbarBusiness').mouseenter(
+		function() {
+			$html = `
+			<ul class="linkbar__dropdown">
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-wallet"></i>
+						<p>finance</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="far fa-address-card"></i>
+						<p>Entrepreneurship</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="far fa-comments"></i>
+						<p>Communications</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-tasks"></i>
+						<p>Management</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fab fa-salesforce"></i>
+						<p>Sales</p>
+					</a>
+				</li>
+			</ul>
+			`
+			$('.linkbar__dropdown-list').html($html)
+		});
+
+
+	$('#linkbarIt').mouseenter(
+		function() {
+			$html = `
+			<ul class="linkbar__dropdown">
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-stamp"></i>
+						<p>IT certification</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-network-wired"></i>
+						<p>Network & Security</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-memory"></i>
+						<p>Hardware</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fab fa-osi"></i>
+						<p>Operating system</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-feather"></i>
+						<p>Other</p>
+					</a>
+				</li>
+			</ul>
+			`
+			$('.linkbar__dropdown-list').html($html)
+		});
+
+	$('#linkbarOffice').mouseenter(
+		function() {
+			$html = `
+			<ul class="linkbar__dropdown">
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fab fa-windows"></i>
+						<p>Microsoft</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fab fa-apple"></i>
+						<p>Apple</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fab fa-google"></i>
+						<p>Google</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fab fa-aws"></i>
+						<p>AWS</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-server"></i>
+						<p>Oracle</p>
+					</a>
+				</li>
+			</ul>
+			`
+			$('.linkbar__dropdown-list').html($html)
+		});
+
+	$('#linkbarPersonal').mouseenter(
+		function() {
+			$html = `
+			<ul class="linkbar__dropdown">
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-user-md"></i>
+						<p>Personal transformation</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-funnel-dollar"></i>
+						<p>Productivity</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fab fa-font-awesome-alt"></i>
+						<p>Leadership</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-hand-holding-usd"></i>
+						<p>Personal finance</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-user-friends"></i>
+						<p>Career debvelopment</p>
+					</a>
+				</li>
+			</ul>
+			`
+			$('.linkbar__dropdown-list').html($html)
+		});
+
+	$('#linkbarDesign').mouseenter(
+		function() {
+			$html = `
+			<ul class="linkbar__dropdown">
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="far fa-object-group"></i>
+						<p>Web Design</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-palette"></i>
+						<p>Graphic Design</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-ruler-combined"></i>
+						<p>Design tools</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-icons"></i>
+						<p>User experience</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-ghost"></i>
+						<p>Game Design</p>
+					</a>
+				</li>
+			</ul>
+			`
+			$('.linkbar__dropdown-list').html($html)
+		});
+
+	$('#linkbarMarketing').mouseenter(
+		function() {
+			$html = `
+			<ul class="linkbar__dropdown">
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-digital-tachograph"></i>
+						<p>Degital marketing</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fab fa-searchengin"></i>
+						<p>SEO</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-comments-dollar"></i>
+						<p>Social media maketing</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="far fa-copyright"></i>
+						<p>Branding</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-landmark"></i>
+						<p>Marketing fundamentals</p>
+					</a>
+				</li>
+			</ul>
+			`
+			$('.linkbar__dropdown-list').html($html)
+		});
+
+	$('#linkbarHealth').mouseenter(
+		function() {
+			$html = `
+			<ul class="linkbar__dropdown">
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-landmark"></i>
+						<p>Fitness</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-volleyball-ball"></i>
+						<p>Sports</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-assistive-listening-systems"></i>
+						<p>Mental health</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-journal-whills"></i>
+						<p>Yoga</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-cheese"></i>
+						<p>Nutrition</p>
+					</a>
+				</li>
+			</ul>
+			`
+			$('.linkbar__dropdown-list').html($html)
+		});
+
+	$('#linkbarMusic').mouseenter(
+		function() {
+			$html = `
+			<ul class="linkbar__dropdown">
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-guitar"></i>
+						<p>Instruments</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-map-marked"></i>
+						<p>Production</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-microphone-alt"></i>
+						<p>Vocal</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fas fa-sign-language"></i>
+						<p>Music fundamentals</p>
+					</a>
+				</li>
+				<li class="linkbar__dropdown-item">
+					<a href="#" class="linkbar__dropdown-link">
+						<i class="fab fa-spotify"></i>
+						<p>Music software</p>
+					</a>
+				</li>
+			</ul>
+			`
+			$('.linkbar__dropdown-list').html($html)
+		});
 
 
 
