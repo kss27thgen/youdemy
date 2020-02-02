@@ -238,7 +238,8 @@ li {
     display: block;
     background: var(--color-gray-light-2);
     font-size: 1.6rem;
-    color: var(--color-gray-dark-1); }
+    color: var(--color-gray-dark-1);
+    position: relative; }
     .linkbar-list {
       display: flex;
       justify-content: center;
@@ -256,7 +257,27 @@ li {
       .linkbar-item i {
         margin-right: 5px; }
       .linkbar-item h5 {
-        font-weight: 300; } }
+        font-weight: 300; }
+    .linkbar__dropdown {
+      background: black;
+      color: white;
+      width: 100%;
+      position: absolute;
+      justify-content: center;
+      display: flex; }
+      .linkbar__dropdown-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem; }
+      .linkbar__dropdown-link {
+        padding: 3rem; }
+      .linkbar__dropdown i {
+        font-size: 4rem; }
+      .linkbar__dropdown p {
+        margin-top: 1rem; }
+      .linkbar__dropdown.inactive {
+        display: none; } }
 
 @media (min-width: 1200px) {
   .linkbar-item:last-of-type {

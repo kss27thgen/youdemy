@@ -6,7 +6,7 @@ $(function() {
     $marker = $("input[name='toggleable']:checked").val();
 
     if ($marker == 'toggleOne') {
-      html = `
+      $html = `
         <a href="#">
 						<div class="toggleable__card">
 							<div class="toggleable__card__left">
@@ -61,10 +61,10 @@ $(function() {
 						</div>
 					</a>
       `
-      $('.toggleable__wrapper__right').html(html);
+      $('.toggleable__wrapper__right').html($html);
 
     } else if ($marker == 'toggleTwo') {
-      html = `
+      $html = `
         <a href="#">
 						<div class="toggleable__card">
 							<div class="toggleable__card__left">
@@ -119,11 +119,31 @@ $(function() {
 						</div>
 					</a>
       `
-      $('.toggleable__wrapper__right').html(html);
+      $('.toggleable__wrapper__right').html($html);
     }
   });
 
-  
+	
+	/////////// Linkbar-dropdown //////////
+	$('.linkbar-item, .linkbar__dropdown').hover(
+		function () {
+			$('.linkbar__dropdown').removeClass('inactive')
+		}, function () {
+			$('.linkbar__dropdown').addClass('inactive')
+		}
+	);
+
+
+	
+
+
+
+
+
+
+
+
+
 
 
 });
