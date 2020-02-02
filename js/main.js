@@ -439,7 +439,7 @@ $(function() {
 				</li>
 				<li class="linkbar__dropdown-item">
 					<a href="#" class="linkbar__dropdown-link">
-						<i class="fas fa-cheese"></i>
+						<i class="fas fa-carrot"></i>
 						<p>Nutrition</p>
 					</a>
 				</li>

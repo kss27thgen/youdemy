@@ -309,7 +309,7 @@ li {
     font-weight: 400; } }
 
 .gallery {
-  margin: 5vh 0; }
+  margin: 7vh 0; }
   .gallery__title {
     font-size: 2rem;
     font-weight: 400; }
@@ -384,7 +384,7 @@ li {
         margin-top: 1rem; } }
 
 .topics {
-  margin-top: 3rem;
+  margin-top: 7rem;
   color: var(--color-gray-dark-2); }
   .topics__title {
     font-size: 2rem;
@@ -407,11 +407,11 @@ li {
     width: 20rem; } }
 
 .welcomeBack {
-  padding: 3rem 0 1rem;
+  margin-top: 5rem;
   font-size: 1.6rem;
   color: var(--color-gray-dark-2); }
   .welcomeBack__title {
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     font-weight: 400;
     color: var(--color-black); }
   .welcomeBack__description {
