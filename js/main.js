@@ -5,13 +5,72 @@ $(function() {
 		$('.overlay').removeClass('inactive');
 		$('.sideNav').removeClass('inactive');
 		$('body').css('overflow', 'hidden');
-		// $('.sideNav').css('overflow-y', 'scroll');
 	});
 	$('.overlay').on('click', function() {
 		$('.overlay').addClass('inactive');
 		$('.sideNav').addClass('inactive');
 		$('body').css('overflow', 'auto');
 	});
+
+
+	/////// Header hover effect //////
+
+	// S-shopping-cart //
+	$('.header-s__right, .shopping-cart-dropdown').hover(
+		function () {
+			$('.shopping-cart-dropdown').removeClass('inactive')
+		}, function () {
+			$('.shopping-cart-dropdown').addClass('inactive')
+		}
+	);
+
+	// business//
+	$('.header-m__right__menu--business, .business-dropdown').hover(
+		function () {
+			$('.business-dropdown').removeClass('inactive')
+		}, function () {
+			$('.business-dropdown').addClass('inactive')
+		}
+	);
+
+	// teach //
+	$('.header-m__right__menu--teach, .teach-dropdown').hover(
+		function () {
+			$('.teach-dropdown').removeClass('inactive')
+		}, function () {
+			$('.teach-dropdown').addClass('inactive')
+		}
+	);
+
+	// shopping-cart //
+	$('.header-m__right__icons-shopping-cart, .shopping-cart-dropdown').hover(
+		function () {
+			$('.shopping-cart-dropdown').removeClass('inactive')
+		}, function () {
+			$('.shopping-cart-dropdown').addClass('inactive')
+		}
+	);
+
+	// me //
+	$('.header-m__right__icons-me, .me-dropdown').hover(
+		function () {
+			$('.me-dropdown').removeClass('inactive')
+		}, function () {
+			$('.me-dropdown').addClass('inactive')
+		}
+	);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	///// Business info /////
