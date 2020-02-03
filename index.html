@@ -4,19 +4,106 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="https://www.udemy.com/staticx/udemy/images/v6/favicon-16x16.png"
+		sizes="16x16" />
 	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="js/main.js" defer></script>
 	<title>Youdemy</title>
 </head>
 <body>
+
+	<section class="overlay inactive">
+	</section>
+	<nav class="sideNav inactive">
+		<div class="sideNav__header">
+			<div class="sideNav__header__left">
+				RD
+			</div>
+			<div class="sideNav__header__middle">
+				<h5>Hi, Rena Doi</h5>
+				<p>Welcome back</p>
+			</div>
+			<div class="sideNav__header__right">
+				<i class="fas fa-chevron-right"></i>
+			</div>
+		</div>
+		<div class="sideNav__main">
+			<ul class="sideNav-list">
+				<li class="sideNav-list--title">
+					Learn
+				</li>
+				<li class="sideNav-list--item">
+					My courses
+				</li>
+				<li class="sideNav-list--title">
+					<i class="fas fa-chart-line"></i>
+					Most Popular
+				</li>
+				<li class="sideNav-list--item">
+					Web Development
+					<i class="fas fa-chevron-right"></i>
+				</li>
+				<li class="sideNav-list--item">
+					Mobile Apps
+					<i class="fas fa-chevron-right"></i>
+				</li>
+				<li class="sideNav-list--item">
+					Game Development
+					<i class="fas fa-chevron-right"></i>
+				</li>
+				<li class="sideNav-list--item">
+					Finance
+					<i class="fas fa-chevron-right"></i>
+				</li>
+				<li class="sideNav-list--item">
+					Data & Analytics
+					<i class="fas fa-chevron-right"></i>
+				</li>
+				<li class="sideNav-list--item">
+					Personal Transformation
+					<i class="fas fa-chevron-right"></i>
+				</li>
+				<li class="sideNav-list--item">
+					Graphic Design
+					<i class="fas fa-chevron-right"></i>
+				</li>
+				<li class="sideNav-list--item">
+					Degital Marketing
+					<i class="fas fa-chevron-right"></i>
+				</li>
+				<li class="sideNav-list--item">
+					All categories
+					<i class="fas fa-chevron-right"></i>
+				</li>
+				<li class="sideNav-list--title">
+					More from Udemy
+				</li>
+				<li class="sideNav-list--item">
+					Get the app
+				</li>
+				<li class="sideNav-list--item">
+					Teach on Udemy
+				</li>
+				<li class="sideNav-list--item">
+					Invite friends
+				</li>
+				<li class="sideNav-list--item">
+					Help
+				</li>
+			</ul>
+		</div>
+		
+
+	</nav>
+
 	<!-- HEADER -->
 	<header class="header">
 
 		<div class="header-s">
 			<div class="header-s__left">
-				<i class="fas fa-bars"></i>
+				<i class="fas fa-bars" id="sideNavOpen"></i>
 				<i class="fas fa-search"></i>
 			</div>
 			<div class="header-s__middle">
@@ -195,7 +282,16 @@
 			</div>
 		</section>
 
-
+		<!-- Business info -->
+		<section class="business-info">
+			<p class="business-info-text">
+				Training 5 or more peple?
+				<span>
+					<a class="business-info-link" href="#">Try Udemy for Business</a>
+				</span>
+			</p>
+			<p><i class="fas fa-times business-info-close"></i></p>
+		</section>
 
 
 		<!-- Gallery Component 1 -->
@@ -549,14 +645,14 @@
 		<!-- Gallery Component 2 -->
 		<article class="gallery">
 			<h3 class="gallery__title">
-				Short and sweet courses for you
+				Because you wishlisted "Nuxt JS with Laravel API - Building SSR Vue JS Apps"
 			</h3>
 			<div class="gallery__wrapper">
 		
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/javascript.jpg">
+							<img src="images/laravue.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -586,7 +682,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/front-end.jpg">
+							<img src="images/laratube.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -616,7 +712,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/mongo.jpg">
+							<img src="images/larara.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -646,7 +742,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/vue.jpg">
+							<img src="images/larashop.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -676,7 +772,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/wcourse.jpg">
+							<img src="images/laravel.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -706,7 +802,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/mysql.jpg">
+							<img src="images/green.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -736,37 +832,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/gcp.jpg">
-						</div>
-						<div class="gallery__card__bottom">
-							<h6 class="gallery__card__bottom__title">
-								Javascript: Understanding the Weird Parts
-							</h6>
-							<p class="gallery__card__bottom__name">
-								Anthony Alicea
-							</p>
-							<div class="gallery__card__bottom__rating">
-								<div class="gallery__card__bottom__rating-stars">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-								</div>
-								<p class="gallery__card__bottom__rating-point">
-									<span>4.1</span>(35,439)
-								</p>
-							</div>
-							<p class="gallery__card__bottom__price">
-								¥ 21,000
-							</p>
-						</div>
-					</a>
-				</div>
-				<div class="gallery__card">
-					<a href="#" class="gallery__card-link">
-						<div class="gallery__card__upper">
-							<img src="images/git.jpg">
+							<img src="images/laravue.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -800,7 +866,7 @@
 		<!-- Toggleable menu -->
 		<section class="toggleable">
 			<h3 class="toggleable__title">
-				What people who learn Vue js take next
+				What people who learn React take next
 			</h3>
 			<div class="toggleable__wrapper">
 				<div class="toggleable__wrapper__left">
@@ -884,7 +950,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/javascript.jpg">
+							<img src="images/webdev1.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -914,7 +980,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/front-end.jpg">
+							<img src="images/webdev2.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -944,7 +1010,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/mongo.jpg">
+							<img src="images/webdev3.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -974,7 +1040,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/vue.jpg">
+							<img src="images/webdev4.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -1004,7 +1070,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/wcourse.jpg">
+							<img src="images/webdev5.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -1034,7 +1100,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/mysql.jpg">
+							<img src="images/webdev6.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -1064,7 +1130,7 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/gcp.jpg">
+							<img src="images/webdev7.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">
@@ -1094,7 +1160,257 @@
 				<div class="gallery__card">
 					<a href="#" class="gallery__card-link">
 						<div class="gallery__card__upper">
-							<img src="images/git.jpg">
+							<img src="images/webdev8.jpg">
+						</div>
+						<div class="gallery__card__bottom">
+							<h6 class="gallery__card__bottom__title">
+								Javascript: Understanding the Weird Parts
+							</h6>
+							<p class="gallery__card__bottom__name">
+								Anthony Alicea
+							</p>
+							<div class="gallery__card__bottom__rating">
+								<div class="gallery__card__bottom__rating-stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<p class="gallery__card__bottom__rating-point">
+									<span>4.1</span>(35,439)
+								</p>
+							</div>
+							<p class="gallery__card__bottom__price">
+								¥ 21,000
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</article>
+
+		<!-- Gallery Component 4 -->
+		<article class="gallery">
+			<h3 class="gallery__title">
+				Because you searched for "firebase"
+			</h3>
+			<div class="gallery__wrapper">
+		
+				<div class="gallery__card">
+					<a href="#" class="gallery__card-link">
+						<div class="gallery__card__upper">
+							<img src="images/firebaae3.jpg">
+						</div>
+						<div class="gallery__card__bottom">
+							<h6 class="gallery__card__bottom__title">
+								Javascript: Understanding the Weird Parts
+							</h6>
+							<p class="gallery__card__bottom__name">
+								Anthony Alicea
+							</p>
+							<div class="gallery__card__bottom__rating">
+								<div class="gallery__card__bottom__rating-stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<p class="gallery__card__bottom__rating-point">
+									<span>4.1</span>(35,439)
+								</p>
+							</div>
+							<p class="gallery__card__bottom__price">
+								¥21,000
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery__card">
+					<a href="#" class="gallery__card-link">
+						<div class="gallery__card__upper">
+							<img src="images/firebase1.jpg">
+						</div>
+						<div class="gallery__card__bottom">
+							<h6 class="gallery__card__bottom__title">
+								Javascript: Understanding the Weird Parts
+							</h6>
+							<p class="gallery__card__bottom__name">
+								Anthony Alicea
+							</p>
+							<div class="gallery__card__bottom__rating">
+								<div class="gallery__card__bottom__rating-stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<p class="gallery__card__bottom__rating-point">
+									<span>4.1</span>(35,439)
+								</p>
+							</div>
+							<p class="gallery__card__bottom__price">
+								¥ 21,000
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery__card">
+					<a href="#" class="gallery__card-link">
+						<div class="gallery__card__upper">
+							<img src="images/firebase2.jpg">
+						</div>
+						<div class="gallery__card__bottom">
+							<h6 class="gallery__card__bottom__title">
+								Javascript: Understanding the Weird Parts
+							</h6>
+							<p class="gallery__card__bottom__name">
+								Anthony Alicea
+							</p>
+							<div class="gallery__card__bottom__rating">
+								<div class="gallery__card__bottom__rating-stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<p class="gallery__card__bottom__rating-point">
+									<span>4.1</span>(35,439)
+								</p>
+							</div>
+							<p class="gallery__card__bottom__price">
+								¥ 21,000
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery__card">
+					<a href="#" class="gallery__card-link">
+						<div class="gallery__card__upper">
+							<img src="images/firebase4.jpg">
+						</div>
+						<div class="gallery__card__bottom">
+							<h6 class="gallery__card__bottom__title">
+								Javascript: Understanding the Weird Parts
+							</h6>
+							<p class="gallery__card__bottom__name">
+								Anthony Alicea
+							</p>
+							<div class="gallery__card__bottom__rating">
+								<div class="gallery__card__bottom__rating-stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<p class="gallery__card__bottom__rating-point">
+									<span>4.1</span>(35,439)
+								</p>
+							</div>
+							<p class="gallery__card__bottom__price">
+								¥ 21,000
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery__card">
+					<a href="#" class="gallery__card-link">
+						<div class="gallery__card__upper">
+							<img src="images/firebase5.jpg">
+						</div>
+						<div class="gallery__card__bottom">
+							<h6 class="gallery__card__bottom__title">
+								Javascript: Understanding the Weird Parts
+							</h6>
+							<p class="gallery__card__bottom__name">
+								Anthony Alicea
+							</p>
+							<div class="gallery__card__bottom__rating">
+								<div class="gallery__card__bottom__rating-stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<p class="gallery__card__bottom__rating-point">
+									<span>4.1</span>(35,439)
+								</p>
+							</div>
+							<p class="gallery__card__bottom__price">
+								¥ 21,000
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery__card">
+					<a href="#" class="gallery__card-link">
+						<div class="gallery__card__upper">
+							<img src="images/firebase6.jpg">
+						</div>
+						<div class="gallery__card__bottom">
+							<h6 class="gallery__card__bottom__title">
+								Javascript: Understanding the Weird Parts
+							</h6>
+							<p class="gallery__card__bottom__name">
+								Anthony Alicea
+							</p>
+							<div class="gallery__card__bottom__rating">
+								<div class="gallery__card__bottom__rating-stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<p class="gallery__card__bottom__rating-point">
+									<span>4.1</span>(35,439)
+								</p>
+							</div>
+							<p class="gallery__card__bottom__price">
+								¥ 21,000
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery__card">
+					<a href="#" class="gallery__card-link">
+						<div class="gallery__card__upper">
+							<img src="images/firebase7.jpg">
+						</div>
+						<div class="gallery__card__bottom">
+							<h6 class="gallery__card__bottom__title">
+								Javascript: Understanding the Weird Parts
+							</h6>
+							<p class="gallery__card__bottom__name">
+								Anthony Alicea
+							</p>
+							<div class="gallery__card__bottom__rating">
+								<div class="gallery__card__bottom__rating-stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<p class="gallery__card__bottom__rating-point">
+									<span>4.1</span>(35,439)
+								</p>
+							</div>
+							<p class="gallery__card__bottom__price">
+								¥ 21,000
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="gallery__card">
+					<a href="#" class="gallery__card-link">
+						<div class="gallery__card__upper">
+							<img src="images/firebase8.jpg">
 						</div>
 						<div class="gallery__card__bottom">
 							<h6 class="gallery__card__bottom__title">

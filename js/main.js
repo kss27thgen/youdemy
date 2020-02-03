@@ -1,5 +1,24 @@
 $(function() {
 
+	////// Side Nav /////
+	$('#sideNavOpen').on('click', function() {
+		$('.overlay').removeClass('inactive');
+		$('.sideNav').removeClass('inactive');
+		$('body').css('overflow', 'hidden');
+		// $('.sideNav').css('overflow-y', 'scroll');
+	});
+	$('.overlay').on('click', function() {
+		$('.overlay').addClass('inactive');
+		$('.sideNav').addClass('inactive');
+		$('body').css('overflow', 'auto');
+	});
+
+
+	///// Business info /////
+	$('.business-info-close').on('click', function() {
+		$('.business-info').css('display', 'none')
+	});
+
 
   // Toggleable menu
   $('#toggleOne, #toggleTwo' ).on('click', function() {
@@ -439,7 +458,7 @@ $(function() {
 				</li>
 				<li class="linkbar__dropdown-item">
 					<a href="#" class="linkbar__dropdown-link">
-						<i class="fas fa-cheese"></i>
+						<i class="fas fa-carrot"></i>
 						<p>Nutrition</p>
 					</a>
 				</li>
