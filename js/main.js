@@ -13,6 +13,48 @@ $(function() {
 	});
 
 
+	/////// Header hover effect //////
+
+	// business//
+	$('.header-m__right__menu--business, .business-dropdown').hover(
+		function () {
+			$('.business-dropdown').removeClass('inactive')
+		}, function () {
+			$('.business-dropdown').addClass('inactive')
+		}
+	);
+
+	// teach //
+	$('.header-m__right__menu--teach, .teach-dropdown').hover(
+		function () {
+			$('.teach-dropdown').removeClass('inactive')
+		}, function () {
+			$('.teach-dropdown').addClass('inactive')
+		}
+	);
+
+	// teach //
+	$('.header-m__right__icons-me, .me-dropdown').hover(
+		function () {
+			$('.me-dropdown').removeClass('inactive')
+		}, function () {
+			$('.me-dropdown').addClass('inactive')
+		}
+	);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	///// Business info /////
 	$('.business-info-close').on('click', function() {
 		$('.business-info').css('display', 'none')
