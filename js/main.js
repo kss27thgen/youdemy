@@ -5,7 +5,6 @@ $(function() {
 		$('.overlay').removeClass('inactive');
 		$('.sideNav').removeClass('inactive');
 		$('body').css('overflow', 'hidden');
-		// $('.sideNav').css('overflow-y', 'scroll');
 	});
 	$('.overlay').on('click', function() {
 		$('.overlay').addClass('inactive');
