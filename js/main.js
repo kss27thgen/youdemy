@@ -15,6 +15,15 @@ $(function() {
 
 	/////// Header hover effect //////
 
+	// S-shopping-cart //
+	$('.header-s__right, .shopping-cart-dropdown').hover(
+		function () {
+			$('.shopping-cart-dropdown').removeClass('inactive')
+		}, function () {
+			$('.shopping-cart-dropdown').addClass('inactive')
+		}
+	);
+
 	// business//
 	$('.header-m__right__menu--business, .business-dropdown').hover(
 		function () {
@@ -33,7 +42,16 @@ $(function() {
 		}
 	);
 
-	// teach //
+	// shopping-cart //
+	$('.header-m__right__icons-shopping-cart, .shopping-cart-dropdown').hover(
+		function () {
+			$('.shopping-cart-dropdown').removeClass('inactive')
+		}, function () {
+			$('.shopping-cart-dropdown').addClass('inactive')
+		}
+	);
+
+	// me //
 	$('.header-m__right__icons-me, .me-dropdown').hover(
 		function () {
 			$('.me-dropdown').removeClass('inactive')

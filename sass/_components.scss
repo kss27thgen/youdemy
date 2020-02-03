@@ -22,7 +22,8 @@
     background: var(--color-white);
     z-index: 10;
     transition: all .7s;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    color: var(--color-gray-dark-2);
 
     &.inactive {
         left: -100%;
@@ -48,7 +49,7 @@
 
             h5 {
                 font-weight: 400;
-                font-size: 2.1rem;
+                font-size: 2rem;
             }
 
             p {

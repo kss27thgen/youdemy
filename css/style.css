@@ -69,8 +69,27 @@ li {
     margin-right: 10px; }
   .header-s__middle img {
     width: 14rem; }
-  .header-s__right i {
-    cursor: pointer; }
+  .header-s__right {
+    position: relative; }
+    .header-s__right .shopping-cart-dropdown {
+      width: 32rem;
+      background: var(--color-white);
+      position: absolute;
+      top: 100%;
+      left: -28rem;
+      z-index: 5;
+      padding: 2.5rem 3rem;
+      font-size: 1.6rem;
+      text-align: center;
+      box-shadow: -1px 0 3px var(--color-gray-light-3), 1px 0 3px var(--color-gray-light-3); }
+      .header-s__right .shopping-cart-dropdown.inactive {
+        display: none; }
+      .header-s__right .shopping-cart-dropdown p {
+        margin-bottom: 1rem; }
+      .header-s__right .shopping-cart-dropdown a {
+        color: var(--color-blue); }
+    .header-s__right i {
+      cursor: pointer; }
 
 .header-m {
   width: 100vw;
@@ -183,6 +202,24 @@ li {
           font-size: 2rem; }
         .header-m__right__icons-icon:nth-child(2n-1) {
           display: none; }
+        .header-m__right__icons-shopping-cart {
+          position: relative; }
+          .header-m__right__icons-shopping-cart .shopping-cart-dropdown {
+            width: 32rem;
+            background: var(--color-white);
+            position: absolute;
+            top: 100%;
+            left: -20rem;
+            z-index: 5;
+            padding: 2.5rem 3rem;
+            text-align: center;
+            box-shadow: -1px 0 3px var(--color-gray-light-3), 1px 0 3px var(--color-gray-light-3); }
+            .header-m__right__icons-shopping-cart .shopping-cart-dropdown.inactive {
+              display: none; }
+            .header-m__right__icons-shopping-cart .shopping-cart-dropdown p {
+              margin-bottom: 1rem; }
+            .header-m__right__icons-shopping-cart .shopping-cart-dropdown a {
+              color: var(--color-blue); }
         .header-m__right__icons-me {
           position: relative; }
           .header-m__right__icons-me-initial {
@@ -334,7 +371,8 @@ li {
   background: var(--color-white);
   z-index: 10;
   transition: all .7s;
-  font-size: 1.7rem; }
+  font-size: 1.6rem;
+  color: var(--color-gray-dark-2); }
   .sideNav.inactive {
     left: -100%; }
   .sideNav__header {
@@ -353,7 +391,7 @@ li {
       margin-right: auto; }
       .sideNav__header__middle h5 {
         font-weight: 400;
-        font-size: 2.1rem; }
+        font-size: 2rem; }
       .sideNav__header__middle p {
         font-size: 1.3rem;
         margin-top: .2rem; }
