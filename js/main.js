@@ -14,6 +14,10 @@ $(function() {
 	});
 
 
+	///// Business info /////
+	$('.business-info-close').on('click', function() {
+		$('.business-info').css('display', 'none')
+	});
 
 
   // Toggleable menu
