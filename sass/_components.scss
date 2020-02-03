@@ -1,3 +1,99 @@
+///// SideNav //////
+.overlay {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.555);
+    z-index: 5;
+
+    &.inactive {
+        display: none;
+    }
+}
+
+.sideNav {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 28rem;
+    padding-bottom: 10rem;
+    background: var(--color-white);
+    z-index: 10;
+    transition: all .7s;
+    font-size: 1.7rem;
+
+    &.inactive {
+        left: -100%;
+    }
+
+    &__header {
+        padding: 2.5rem 0;
+        display: flex;
+        align-items: center;
+        background: var(--color-gray-light-3);
+
+        &__left {
+            padding: 1rem;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            border-radius: 50%;
+            background: var(--color-gray-dark-2);
+            color: var(--color-white);
+        }
+
+        &__middle {
+            margin-right: auto;
+
+            h5 {
+                font-weight: 400;
+                font-size: 2.1rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                margin-top: .2rem;
+            }
+        }
+
+        &__right {
+            margin-right: 1rem;
+        }
+    }
+
+    &__main {}
+
+    &-list {
+
+        &--title {
+            padding: 1.7rem;
+            font-weight: 400;
+
+            i {
+                margin-right: 1rem;
+            }
+        }
+
+        &--item {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+
+            &:hover {
+                background: var(--color-gray-light-2);
+            }
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+
 //////// Link bar /////////
 .linkbar {
     display: none;
@@ -55,16 +151,19 @@
                 text-align: center;
                 padding: 1rem;
             }
+
             &-link {
                 padding: 3rem;
             }
+
             i {
                 font-size: 4rem;
             }
+
             p {
                 margin-top: 1rem;
             }
-            
+
             &.inactive {
                 display: none;
             }
@@ -177,7 +276,7 @@
 
         &__upper {
             width: 16rem;
-            filter: sepia(.1) grayscale(.05) saturate(.9);
+            filter: sepia(.1) grayscale(.1) saturate(.9);
 
             img {
                 width: 99.5%;
