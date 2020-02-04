@@ -53,7 +53,7 @@ li {
   display: flex;
   font-size: 1.4rem;
   color: var(--color-gray-dark-1);
-  border-bottom: 5px solid var(--color-gray-light-3); }
+  border-bottom: 2px solid var(--color-gray-light-3); }
 
 .header-s {
   width: 100vw;
@@ -111,13 +111,15 @@ li {
       .header-m__left-categories {
         display: flex;
         align-items: center;
-        cursor: pointer; }
+        position: relative; }
         .header-m__left-categories i {
           margin-right: 5px;
-          font-size: 2rem; }
+          font-size: 2rem;
+          cursor: pointer; }
         .header-m__left-categories h6 {
           font-size: 1.4rem;
-          font-weight: 400; }
+          font-weight: 400;
+          cursor: pointer; }
     .header-m__middle {
       margin-right: 3rem; }
       .header-m__middle-form {
@@ -147,7 +149,7 @@ li {
           background: var(--color-red);
           color: var(--color-white); }
     .header-m__right {
-      margin-right: 1rem;
+      margin-right: 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between; }
@@ -255,7 +257,7 @@ li {
                 margin-right: 1rem; }
               .header-m__right__icons-me .me-dropdown__top__right-name {
                 font-size: 1.8rem;
-                font-weight: 400; }
+                font-weight: 300; }
               .header-m__right__icons-me .me-dropdown__top__right-email {
                 font-size: 1.4rem; }
             .header-m__right__icons-me .me-dropdown__middle {
@@ -499,7 +501,8 @@ li {
   border: 1px solid var(--color-gray-light-3);
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  color: var(--color-gray-dark-1); }
   .business-info-link {
     color: var(--color-blue); }
   .business-info-close {

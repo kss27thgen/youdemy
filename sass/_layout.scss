@@ -4,7 +4,7 @@
     display: flex;
     font-size: 1.4rem;
     color: var(--color-gray-dark-1);
-    border-bottom: 5px solid var(--color-gray-light-3);
+    border-bottom: 2px solid var(--color-gray-light-3);
 }
 
 .header-s {
@@ -98,17 +98,23 @@
             &-categories {
                 display: flex;
                 align-items: center;
-                cursor: pointer;
+                position: relative;
 
                 i {
                     margin-right: 5px;
                     font-size: 2rem;
+                    cursor: pointer;
+
                 }
 
                 h6 {
                     font-size: 1.4rem;
                     font-weight: 400;
+                    cursor: pointer;
+
                 }
+
+                
             }
         }
 
@@ -155,7 +161,7 @@
         }
 
         &__right {
-            margin-right: 1rem;
+            margin-right: 2rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -320,7 +326,7 @@
 
                                 &-name {
                                     font-size: 1.8rem;
-                                    font-weight: 400;
+                                    font-weight: 300;
                                 }
 
                                 &-email {
