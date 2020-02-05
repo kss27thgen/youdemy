@@ -61,9 +61,287 @@ $(function() {
 	);
 
 		// categories //
-	
+	$('.header-m__left-categories').hover(function() {
+		$('.categories-dropdown__first').removeClass('inactive');
+	}, function () {
+		$('.categories-dropdown__first').addClass('inactive');
+	});
 
+	$('.categories-dropdown__first, .categories-dropdown__second, .categories-dropdown__third').hover(function() {
+		$('.categories-dropdown__second').removeClass('inactive');
+	}, function () {
+		$('.categories-dropdown__second').addClass('inactive');
+	});
 
+	$('.categories-dropdown__second, .categories-dropdown__third').hover(function() {
+		$('.categories-dropdown__third').removeClass('inactive');
+	}, function () {
+		$('.categories-dropdown__third').addClass('inactive');
+	});
+
+	// cate1hover //
+	$('.categories-dropdown').on('mouseenter', '#cate1Development', function() {
+		$html = `
+			<li class="categories-dropdown__second-item" id="cate2Web">
+				<div class="categories-dropdown__second-item-inner">
+					<a>Web Development</a>
+					<i class="fas fa-chevron-right"></i>
+				</div>
+			</li>
+			<li class="categories-dropdown__second-item" id="cate2Data">
+				<div class="categories-dropdown__second-item-inner">
+					<a>Data Science</a>
+					<i class="fas fa-chevron-right"></i>
+				</div>
+			</li>
+			<li class="categories-dropdown__second-item" id="cate2Mobile">
+				<div class="categories-dropdown__second-item-inner">
+					<a>Mobile Apps</a>
+					<i class="fas fa-chevron-right"></i>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__second-list').html($html);
+	});
+
+	$('.categories-dropdown').on('mouseenter', '#cate1Business', function () {
+		$html = `
+			<li class="categories-dropdown__second-item" id="cate2Finance">
+				<div class="categories-dropdown__second-item-inner">
+					<a>Finance</a>
+					<i class="fas fa-chevron-right"></i>
+				</div>
+			</li>
+			<li class="categories-dropdown__second-item" id="cate2Management">
+				<div class="categories-dropdown__second-item-inner">
+					<a>Management</a>
+					<i class="fas fa-chevron-right"></i>
+				</div>
+			</li>
+			<li class="categories-dropdown__second-item" id="cate2Sales">
+				<div class="categories-dropdown__second-item-inner">
+					<a>Sales</a>
+					<i class="fas fa-chevron-right"></i>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__second-list').html($html);
+	});
+
+	$('.categories-dropdown').on('mouseenter', '#cate1Finance', function () {
+		$html = `
+			<li class="categories-dropdown__second-item" id="cate2Bookkeeping">
+				<div class="categories-dropdown__second-item-inner">
+					<a>Bookkeeping</a>
+					<i class="fas fa-chevron-right"></i>
+				</div>
+			</li>
+			<li class="categories-dropdown__second-item" id="cate2Compliance">
+				<div class="categories-dropdown__second-item-inner">
+					<a>Compliance</a>
+					<i class="fas fa-chevron-right"></i>
+				</div>
+			</li>
+			<li class="categories-dropdown__second-item" id="cate2Taxes">
+				<div class="categories-dropdown__second-item-inner">
+					<a>Taxes</a>
+					<i class="fas fa-chevron-right"></i>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__second-list').html($html);
+	});
+
+	// cate2hover //
+	$('.categories-dropdown').on('mouseenter', '#cate2Web', function () {
+		$html = `
+			<li class="categories-dropdown__third-item" id="cate3Java">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Java</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item" id="cate3Angular">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Angular</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item" id="cate3React">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">React</a>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__third-list').html($html);
+
+	});
+
+	$('.categories-dropdown').on('mouseenter', '#cate2Data', function () {
+		$html = `
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Machine Learning</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Deep Learning</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Data Analycis</a>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__third-list').html($html);
+	});
+
+	$('.categories-dropdown').on('mouseenter', '#cate2Mobile', function () {
+		$html = `
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Android</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">iOS</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Google Flutter</a>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__third-list').html($html);
+	});
+
+	$('.categories-dropdown').on('mouseenter', '#cate2Finance', function () {
+		$html = `
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Investing</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Stock trading</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Forex</a>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__third-list').html($html);
+	});
+
+	$('.categories-dropdown').on('mouseenter', '#cate2Management', function () {
+		$html = `
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Leadership</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Risk management</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Agile</a>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__third-list').html($html);
+	});
+
+	$('.categories-dropdown').on('mouseenter', '#cate2Sales', function () {
+		$html = `
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">B2B skills</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Presentation</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Customer service</a>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__third-list').html($html);
+	});
+
+	$('.categories-dropdown').on('mouseenter', '#cate2Bookkeeping', function () {
+		$html = `
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Bookkeeping</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">SAP FICE</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Cost accounting</a>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__third-list').html($html);
+	});
+
+	$('.categories-dropdown').on('mouseenter', '#cate2Compliance', function () {
+		$html = `
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Risk management</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">IFRS</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Internal Auditing</a>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__third-list').html($html);
+	});
+
+	$('.categories-dropdown').on('mouseenter', '#cate2Taxes', function () {
+		$html = `
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Tax preparation</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Goods & Seavices tax</a>
+				</div>
+			</li>
+			<li class="categories-dropdown__third-item">
+				<div class="categories-dropdown__third-item-inner">
+					<a href="#">Value added tax(VAT)</a>
+				</div>
+			</li>
+		`
+		$('.categories-dropdown__third-list').html($html);
+	});
 
 
 
