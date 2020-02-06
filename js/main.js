@@ -12,6 +12,18 @@ $(function() {
 		$('body').css('overflow', 'auto');
 	});
 
+	// slide effect //
+	$('.slide-right').on('click', function() {
+		$('.sideNav-wrapper').addClass('slide-right');
+	});
+
+	$('#slide-left').on('click', function() {
+		$('.sideNav-wrapper').removeClass('slide-right');
+	});
+
+
+
+
 
 	/////// Header hover effect //////
 
