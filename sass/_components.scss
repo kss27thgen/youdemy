@@ -138,6 +138,43 @@
         }
 
         &__body {}
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--item {
+            padding: 0 2rem;
+            font-weight: 400;
+
+            &:hover {
+                background: var(--color-gray-light-2);
+            }
+
+            p {
+                padding: 1.5rem 0;
+
+            }
+        }
+
+        &--link {
+            padding: 0 2rem;
+
+            &:hover {
+                background: var(--color-gray-light-2);
+            }
+
+            &-first {
+                font-weight: 600;
+            }
+
+            a {
+                display: inline-block;
+                padding: 1.5rem 0;
+
+            }
+        }
     }
 }
 

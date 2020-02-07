@@ -12,7 +12,7 @@ $(function() {
 		$('body').css('overflow', 'auto');
 	});
 
-	// slide effect //
+	/// slide effect ///
 	$('.slide-right').on('click', function() {
 		$('.sideNav-wrapper').addClass('slide-right');
 	});
@@ -20,6 +20,407 @@ $(function() {
 	$('#slide-left').on('click', function() {
 		$('.sideNav-wrapper').removeClass('slide-right');
 	});
+
+	// inner content //
+	$('.sideNav__header').on('click', function() {
+		$html = `
+			<ul class="sideNav__right-list">
+				<li class="sideNav__right--item">
+					<p>Alerts</p>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">My notifications</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Messages</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Wishlist</a>
+				</li>
+				<li class="sideNav__right--item">
+					<p>Account</p>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Notifications settings</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Payment methods</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Udemy credits</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">purchase history</a>
+				</li>
+				<li class="sideNav__right--item">
+					<p>profile</p>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">public profile</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Edit profile</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Log out</a>
+				</li>
+			</ul>
+		`;
+		$('.sideNav__right__body').html($html);
+	});
+
+	$('#sideNavDevelopment').on('click', function() {
+		$html = `
+			<ul class="sideNav__right-list">
+				<li class="sideNav__right--link sideNav__right--link-first">
+					<a href="#">All web development</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Web development</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">JavaScript</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Angular</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">React</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">CSS</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">PHP</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Node.js</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">WordPress</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Vue.js</a>
+				</li>
+			</ul>
+		`;
+		$('.sideNav__right__body').html($html);
+	});
+
+	$('#sideNavMobile').on('click', function() {
+		$html = `
+			<ul class="sideNav__right-list">
+				<li class="sideNav__right--link sideNav__right--link-first">
+					<a href="#">All mobile apps</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Android Development</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">iOS Development</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Google Flutter</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Swift</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">React Ntive</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Dart programming language</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Mobile development</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Kotlin</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Redux framework</a>
+				</li>
+			</ul>
+		`;
+		$('.sideNav__right__body').html($html);
+	});
+
+	$('#sideNavGame').on('click', function() {
+		$html = `
+			<ul class="sideNav__right-list">
+				<li class="sideNav__right--link sideNav__right--link-first">
+					<a href="#">All game development</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Unity</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">C#</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Game development fundamentals</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Unreal engine</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">3D game development</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">C++</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">2D game development</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Unreal engine blueprints</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Mobile game development</a>
+				</li>
+			</ul>
+		`;
+		$('.sideNav__right__body').html($html);
+	});
+
+	$('#sideNavFinance').on('click', function() {
+		$html = `
+			<ul class="sideNav__right-list">
+				<li class="sideNav__right--link sideNav__right--link-first">
+					<a href="#">All finance</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Finacial analysis</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Investing</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Stock Trading</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Finance fundamentals</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Financial modeling</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Forex</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Excel</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Accounting</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Python</a>
+				</li>
+			</ul>
+		`;
+		$('.sideNav__right__body').html($html);
+	});
+
+	$('#sideNavData').on('click', function() {
+		$html = `
+			<ul class="sideNav__right-list">
+				<li class="sideNav__right--link sideNav__right--link-first">
+					<a href="#">All data & analytics</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">SQL</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Microsoft power BI</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Business analysis</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Tableau</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Business inteligence</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">MySQL</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Data analysis</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Data modeling</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Big data</a>
+				</li>
+			</ul>
+		`;
+		$('.sideNav__right__body').html($html);
+	});
+
+	$('#sideNavPersonal').on('click', function() {
+		$html = `
+			<ul class="sideNav__right-list">
+				<li class="sideNav__right--link sideNav__right--link-first">
+					<a href="#">All personal transformation</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Life coaching</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Reiki</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Neuro-linguistic programming</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Energy healing</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Neuroscience</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Emotional inteligence</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Hyponotherapy</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Mindfulness</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Meditation</a>
+				</li>
+			</ul>
+		`;
+		$('.sideNav__right__body').html($html);
+	});
+
+	$('#sideNavGraphic').on('click', function() {
+		$html = `
+			<ul class="sideNav__right-list">
+				<li class="sideNav__right--link sideNav__right--link-first">
+					<a href="#">All Graphic design</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Photoshop</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Graphic Design</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Drawing</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Adobe illustrator</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Digital painting</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Indesign</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Character design</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Figure drawing</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Logo design</a>
+				</li>
+			</ul>
+		`;
+		$('.sideNav__right__body').html($html);
+	});
+
+	$('#sideNavDegital').on('click', function() {
+		$html = `
+			<ul class="sideNav__right-list">
+				<li class="sideNav__right--link sideNav__right--link-first">
+					<a href="#">All degital marketing</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Digital marketing</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Google Ads (Adwords)</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Google Ads Certification</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Social media marketing</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Marketing strategy</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Facebook marketing</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Google analytics</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Business strategy</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Email marketing</a>
+				</li>
+			</ul>
+		`;
+		$('.sideNav__right__body').html($html);
+	});
+
+	$('#sideNavAll').on('click', function() {
+		$html = `
+			<ul class="sideNav__right-list">
+				<li class="sideNav__right--link">
+					<a href="#">Development</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Business</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Finance & Accounting</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">IT & Software</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Office productivity</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Personal development</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Design</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Marketing</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Lifestyle</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Photography</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Health & Fitness</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Music</a>
+				</li>
+				<li class="sideNav__right--link">
+					<a href="#">Teaching & Academics</a>
+				</li>
+			</ul>
+		`;
+		$('.sideNav__right__body').html($html);
+	});
+
+
 
 
 
