@@ -371,6 +371,7 @@
         display: flex;
         justify-content: space-between;
         overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     &__card {
