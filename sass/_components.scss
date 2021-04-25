@@ -14,6 +14,7 @@
 .sideNav {
     position: fixed;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     top: 0;
     left: 0;
     bottom: 0;
@@ -575,6 +576,7 @@
     &__wrapper {
 
         overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
         margin-top: .7rem;
         display: flex;
     }

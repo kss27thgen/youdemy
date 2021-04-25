@@ -423,6 +423,7 @@ li {
 .sideNav {
   position: fixed;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   top: 0;
   left: 0;
   bottom: 0;
@@ -724,6 +725,7 @@ li {
       font-size: 1.8rem; }
   .welcomeBack__wrapper {
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     margin-top: .7rem;
     display: flex; }
   .welcomeBack__card {
